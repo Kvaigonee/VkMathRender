@@ -1,11 +1,13 @@
-cmake_minimum_required(VERSION 3.26)
+cmake_minimum_required(VERSION 3.12)
 
 set(APP_PROJECT_NAME App)
 
+project(${APP_PROJECT_NAME})
 
-add_executable(App main.cpp)
+add_executable(${APP_PROJECT_NAME}
+        main.cpp)
 
-add_subdirectory(${PROJECT_SOURCE_DIR}/../Render Render)
 
-target_link_libraries(App Render)
+include_directories(SYSTEM ../Render)
 
+target_link_libraries(${APP_PROJECT_NAME} Render)

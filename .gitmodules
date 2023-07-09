@@ -1,0 +1,9 @@
+[submodule "dependencies/glfw"]
+	path = dependencies/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "dependencies/volk"]
+	path = dependencies/volk
+	url = https://github.com/zeux/volk.git
+[submodule "dependencies/vulkan"]
+	path = dependencies/vulkan
+	url = https://github.com/KhronosGroup/Vulkan-Headers.git

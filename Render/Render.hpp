@@ -7,7 +7,7 @@ class Render {
     public:
         Render();
         virtual ~Render();
-        int getId();
+        int createWindow();
 
     private:
         int id;

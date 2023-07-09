@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-#include "../Render/Render.h"
+#include <Render.hpp>
 
 using namespace std;
 
@@ -8,6 +8,6 @@ int main() {
 
     Render* rn = new Render();
 
-    std::cout << rn->getId();
+    std::cout << rn->createWindow();
 
 }
