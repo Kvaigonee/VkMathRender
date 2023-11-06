@@ -1,10 +1,10 @@
-#include "Render.hpp"
+#include "app.hpp"
 
-int main() {
+namespace VKRender {
 
-
-	Render renderInstance = Render();
-
-	renderInstance.createWindow();
-
+    void App::run() {
+        while (!window.shouldClose()) {
+            glfwPollEvents();
+        }
+    }
 }
